@@ -1,0 +1,11 @@
+name: CICo
+version: 1.0
+author: MCK
+api-version: 1.12
+main: me.therealmck.cico.Main
+depend:
+  - Citizens
+commands:
+  cico:
+    description: Cico command
+    usage: /cico admin [item category] [chance] [command or item]

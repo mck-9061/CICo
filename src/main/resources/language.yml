@@ -1,0 +1,16 @@
+added1: Added a recipe. Please type a command (without /) to run when the recipe is used, or just type "item" to give the item in your hand.
+added2: Added command/item. Please type the chance the recipe will run successfully (0-100).
+added3: Item added. Please edit config to add more commands or edit values.
+
+crafted: The craft ran successfully!
+failed: The craft failed.
+invalid: That isn't a recipe.
+
+admin-interface-name: Add recipe
+player-interface-name: Craft
+
+admin-interface-accept: Click to add recipe
+player-interface-accept: Click to craft!
+
+bad-category: The category specified isn't valid.
+bad-chance: Chance specified is invalid. Defaulted to 100.

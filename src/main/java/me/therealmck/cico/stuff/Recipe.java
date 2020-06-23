@@ -39,6 +39,15 @@ public class Recipe {
         }
     }
 
+    public Recipe(String name, RecipeCategory category, List<ItemStack> itemsIn, ItemStack itemOut, List<String> commands, int chance) {
+        this.name = name;
+        this.category = category;
+        this.itemsIn = itemsIn;
+        this.itemOut = itemOut;
+        this.commands = commands;
+        this.chance = chance;
+    }
+
     public String getName() {
         return name;
     }

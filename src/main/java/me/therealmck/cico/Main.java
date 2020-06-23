@@ -2,15 +2,18 @@ package me.therealmck.cico;
 
 import me.therealmck.cico.commands.CicoCommand;
 import me.therealmck.cico.stuff.RecipeCategory;
+import me.therealmck.cico.stuff.RecipeFactory;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Main extends JavaPlugin {
@@ -19,6 +22,8 @@ public class Main extends JavaPlugin {
     public static File langFile;
     public static FileConfiguration langConfig;
     public static Plugin instance;
+
+    public static HashMap<Player, RecipeFactory> activeFactories = new HashMap<>();
 
     public static List<RecipeCategory> currentCategories = new ArrayList<>();
 

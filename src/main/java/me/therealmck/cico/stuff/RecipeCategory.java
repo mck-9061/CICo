@@ -47,4 +47,17 @@ public class RecipeCategory {
     public List<Recipe> getRecipes() {
         return recipes;
     }
+
+    public void addRecipe(Recipe recipe) {
+        recipes.add(recipe);
+
+        ConfigurationSection section = Main.cicoConfig.getConfigurationSection(name+".recipes");
+        section = section.createSection(recipe.getName());
+        section.set("input-items", recipe.getItemsIn());
+        section.set("output-item", recipe.getItemOut());
+        section.set("output-commands", recipe.getCommands());
+        section.set("chance", recipe.getChance());
+
+        Main.saveCicoConfig();
+    }
 }

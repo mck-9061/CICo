@@ -9,19 +9,19 @@ recipe-category-1:
   recipes:
     recipe-1:
       input-items:
-        1:
+        -
           ==: org.bukkit.inventory.ItemStack
           type: DIAMOND
           amount: 1
-        2:
+        -
           ==: org.bukkit.inventory.ItemStack
           type: DIAMOND
           amount: 1
-        3:
+        -
           ==: org.bukkit.inventory.ItemStack
           type: DIAMOND
           amount: 1
-        4:
+        -
           ==: org.bukkit.inventory.ItemStack
           type: DIAMOND
           amount: 1
